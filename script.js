@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js-enabled");
+
 const revealElements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
