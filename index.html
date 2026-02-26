@@ -1,118 +1,431 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gabriel Andrade Correa | Portifolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-content">
-            <div class="logo">Portfólio</div>
-            <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a class="logo" href="#home">Gabriel Andrade</a>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#stack">Stack</a>
+        <a href="#competencias">Competencias</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contato" class="nav-cta">Contato</a>
+      </div>
     </nav>
+  </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="profile-image">
-                <img src="images/Perfil.png" alt="Gabriel Andrade Correa">
-            </div>
-            <h1>Gabriel Andrade Correa</h1>
-            <p>Desenvolvedor Front-End & Mobile</p>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Full stack com foco em mobile</p>
+        <h1>
+          Eu entrego produtos full stack com foco em mobile: apps bem feitos,
+          backends claros e experiencias consistentes do inicio ao fim.
+        </h1>
+        <p class="hero-sub">
+          React Native (Expo), Flutter, React e Node.js. Experiencia com
+          autenticacao, bancos SQL e integracoes externas.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projetos">Ver projetos</a>
+          <a class="btn ghost" href="#contato">Falar comigo</a>
         </div>
+        <div class="hero-metrics">
+          <div class="metric">
+            <span class="value">4</span>
+            <span class="label">Projetos em producao</span>
+          </div>
+          <div class="metric">
+            <span class="value">Mobile + Web</span>
+            <span class="label">Entrega full stack</span>
+          </div>
+          <div class="metric">
+            <span class="value">Node + SQL</span>
+            <span class="label">APIs e bancos</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card reveal" data-delay="150">
+        <div class="profile">
+          <img src="images/Perfil.png" alt="Gabriel Andrade Correa" />
+        </div>
+        <div class="profile-info">
+          <h2>Gabriel Andrade Correa</h2>
+          <p>Desenvolvedor Full Stack (Mobile-first)</p>
+          <div class="profile-tags">
+            <span>React Native</span>
+            <span>Flutter</span>
+            <span>Node.js</span>
+            <span>TypeScript</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="sobre" class="about">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Sou desenvolvedor Front-End com um ano de experiência na empresa Ludare, onde trabalho na manutenção e aprimoramento de aplicativos utilizando tecnologias modernas.</p>
-                    <p>Minha experiência inclui o desenvolvimento de interfaces responsivas, integração com APIs e criação de experiências de usuário intuitivas. Estou sempre buscando aprimorar minhas habilidades e contribuir com soluções criativas para desafios de desenvolvimento.</p>
-                </div>
-                <div class="skills">
-                    <h3>Minhas Habilidades</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React Native</span>
-                        <span class="skill-tag">UI/UX</span>
-                        <span class="skill-tag">Git</span>
-                    </div>
-                </div>
-            </div>
+    <section id="sobre" class="section">
+      <div class="section-title">
+        <h2>Sobre</h2>
+        <p>Experiencia pratica em produtos digitais, do prototipo ao deploy.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>Resumo profissional</h3>
+          <p>
+            Desenvolvedor front-end com foco em interfaces responsivas e apps
+            mobile. Trabalho com integracoes de API, autenticacao, e fluxos de
+            dados reais para gerar experiencias consistentes.
+          </p>
         </div>
+        <div class="about-card reveal" data-delay="120">
+          <h3>O que eu entrego</h3>
+          <div class="pill-list">
+            <span>Interfaces responsivas</span>
+            <span>APIs Node + Express</span>
+            <span>Auth com Firebase</span>
+            <span>Postgres, SQLite e Supabase</span>
+            <span>UX mobile com Expo e Flutter</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projetos" class="projects">
-        <div class="container">
-            <h2>Meus Projetos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/capa1.png" alt="App para Cabeleireiros">
-                    </div>
-                    <div class="project-info">
-                        <h3>App para Cabeleireiros</h3>
-                        <p>Aplicativo mobile focado em agendamentos e gestão de clientes para salões de beleza. Desenvolvido com React Native.</p>
-                        <a href="https://barbearia-three-sepia.vercel.app/" target="_blank" class="btn">Ver Projeto</a>
-                    </div>
-                </div>
+    <section id="projetos" class="section">
+      <div class="section-title">
+          <h2>Projetos</h2>
+          <p>Selecao dos projetos com maior profundidade tecnica e impacto.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-media carousel" data-interval="3500">
+            <img src="images/Barbearia.png" alt="Tela do sistema Barbearia" loading="lazy" class="active" />
+            <img src="images/Barbearia1.png" alt="Tela do sistema Barbearia" loading="lazy" />
+            <img src="images/Barbearia2.png" alt="Tela do sistema Barbearia" loading="lazy" />
+            <img src="images/Barbearia3.png" alt="Tela do sistema Barbearia" loading="lazy" />
+            <img src="images/Barbearia4.png" alt="Tela do sistema Barbearia" loading="lazy" />
+            <img src="images/Barbearia5.png" alt="Tela do sistema Barbearia" loading="lazy" />
+          </div>
+          <div class="project-top">
+            <span class="project-type">Web App</span>
+            <h3>Barbearia</h3>
+            <p>
+              Sistema de agendamento com painel administrativo, disponibilidade
+              em tempo real e integracao com WhatsApp.
+            </p>
+          </div>
+          <div class="project-tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>MUI</span>
+            <span>Supabase</span>
+            <span>Vite</span>
+          </div>
+          <div class="project-highlights">
+            <span>Painel admin</span>
+            <span>Pacotes de servico</span>
+            <span>Bloqueio de horarios</span>
+          </div>
+          <div class="project-case">
+            <h4>Case rapido</h4>
+            <ul>
+              <li>Problema: agendamentos manuais e pouco controle de horarios.</li>
+              <li>Solucao: painel completo com disponibilidade em tempo real.</li>
+              <li>Impacto: fluxo mais rapido e organizado para clientes e equipe.</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <a class="btn" href="https://barbearia-three-sepia.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+            <a class="btn ghost" href="https://github.com/gabriel-Andrade-Correa/Barbearia" target="_blank" rel="noreferrer">Repositorio</a>
+          </div>
+        </article>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-utensils fa-3x" style="color: var(--primary-color);"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Sistema para Restaurantes</h3>
-                        <p>Aplicativo para pedidos e gerenciamento de mesas em restaurantes, otimizando o fluxo de trabalho.</p>
-                        <a href="https://github.com/gabriel-Andrade-Correa/app" target="_blank" class="btn">Ver Projeto</a>
-                    </div>
-                </div>
-
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-boxes fa-3x" style="color: var(--primary-color);"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Controle de Estoque</h3>
-                        <p>Aplicativo para organização e gestão eficiente de estoque, com recursos de tracking e relatórios.</p>
-                        <a href="https://github.com/gabriel-Andrade-Correa/ivi" target="_blank" class="btn">Ver Projeto</a>
-                    </div>
-                </div>
+        <article class="project-card reveal" data-delay="120">
+          <div class="project-media duo">
+            <div class="carousel" data-interval="3200">
+              <img src="images/Streamhub1.jpeg" alt="Tela do StreamHub" loading="lazy" class="active" />
+              <img src="images/Streamhub3.jpeg" alt="Tela do StreamHub" loading="lazy" />
+              <img src="images/Streamhub5.jpeg" alt="Tela do StreamHub" loading="lazy" />
             </div>
-        </div>
+            <div class="carousel" data-interval="3200">
+              <img src="images/Streamhub2.jpeg" alt="Tela do StreamHub" loading="lazy" class="active" />
+              <img src="images/Streamhub4.jpeg" alt="Tela do StreamHub" loading="lazy" />
+              <img src="images/Streamhub6.jpeg" alt="Tela do StreamHub" loading="lazy" />
+            </div>
+          </div>
+          <div class="project-top">
+            <span class="project-type">Mobile + API</span>
+            <h3>StreamHub</h3>
+            <p>
+              App para agregar catalogos de streaming com busca inteligente,
+              recomendacoes e integracao com TMDB.
+            </p>
+          </div>
+          <div class="project-tags">
+            <span>React Native</span>
+            <span>Expo</span>
+            <span>Node.js</span>
+            <span>SQLite</span>
+            <span>Jest</span>
+          </div>
+          <div class="project-highlights">
+            <span>Deep links</span>
+            <span>Cache com TTL</span>
+            <span>Preferencias do usuario</span>
+          </div>
+          <div class="project-case">
+            <h4>Case rapido</h4>
+            <ul>
+              <li>Problema: descobrir onde assistir sem abrir varios apps.</li>
+              <li>Solucao: agregador com busca, recomendacoes e API propria.</li>
+              <li>Impacto: experiencia centralizada e mais rapida para o usuario.</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <a class="btn" href="https://expo.dev/accounts/gabriel-andrade-correa/projects/streamhub/builds/4af5ab64-4354-45a4-8d81-a5630f413923" target="_blank" rel="noreferrer">Build Expo</a>
+            <a class="btn ghost" href="https://github.com/gabriel-Andrade-Correa/Stream" target="_blank" rel="noreferrer">Repo mobile</a>
+            <a class="btn ghost" href="https://github.com/gabriel-Andrade-Correa/backend-stream" target="_blank" rel="noreferrer">Repo backend</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-delay="200">
+          <div class="project-media placeholder">
+            <div>
+              <span>Em andamento</span>
+              <p>Demo sera publicada em breve.</p>
+            </div>
+          </div>
+          <div class="project-top">
+            <span class="project-type">Social + Habit Tracker</span>
+            <h3>Rede-Habit</h3>
+            <p>
+              MVP de rede social de habitos com feed, autenticacao Firebase e
+              backend com Prisma e Supabase Storage.
+            </p>
+          </div>
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Node.js</span>
+            <span>Prisma</span>
+            <span>PostgreSQL</span>
+            <span>Firebase</span>
+          </div>
+          <div class="project-highlights">
+            <span>Feed e curtidas</span>
+            <span>Upload de avatar</span>
+            <span>Tokens validados</span>
+          </div>
+          <div class="project-case">
+            <h4>Case rapido</h4>
+            <ul>
+              <li>Problema: manter consistencia e engajamento em habitos.</li>
+              <li>Solucao: feed social com autenticacao segura e dados reais.</li>
+              <li>Impacto: base pronta para lancamento e validacao com usuarios.</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <a class="btn ghost" href="https://github.com/gabriel-Andrade-Correa/Rede-Habit-front" target="_blank" rel="noreferrer">Repo frontend</a>
+            <a class="btn ghost" href="https://github.com/gabriel-Andrade-Correa/Rede-Habit-backend" target="_blank" rel="noreferrer">Repo backend</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-delay="260">
+          <div class="project-media">
+            <img src="images/jogo-da-memoria.png" alt="Tela do Jogo da Memoria" loading="lazy" class="active" />
+          </div>
+          <div class="project-top">
+            <span class="project-type">Web Game</span>
+            <h3>Jogo da Memoria</h3>
+            <p>
+              Jogo interativo com cartas, efeitos sonoros, confete e placar
+              persistido em localStorage.
+            </p>
+          </div>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Web Audio</span>
+          </div>
+          <div class="project-highlights">
+            <span>Timer e recorde</span>
+            <span>Feedback haptico</span>
+            <span>Modal final</span>
+          </div>
+          <div class="project-case">
+            <h4>Case rapido</h4>
+            <ul>
+              <li>Problema: criar uma experiencia leve e personalizada.</li>
+              <li>Solucao: jogo com audio, animacoes e mensagens dinamicas.</li>
+              <li>Impacto: engajamento alto e experiencia memoravel.</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <a class="btn" href="https://lia-rust-alpha.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+            <a class="btn ghost" href="https://github.com/gabriel-Andrade-Correa/Lia" target="_blank" rel="noreferrer">Repositorio</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="contato" class="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-content">
-                <div class="social-links">
-                    <a href="https://github.com/gabriel-Andrade-Correa" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/gabriel-andrade-correa/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:seu-email@exemplo.com" class="social-link"><i class="far fa-envelope"></i></a>
-                </div>
-            </div>
+    <section id="stack" class="section">
+      <div class="section-title">
+        <h2>Stack</h2>
+        <p>Tecnologias que eu uso para entregar produtos completos.</p>
+      </div>
+      <div class="stack-grid reveal">
+        <div class="stack-card">
+          <h3>Front-end</h3>
+          <p>React, TypeScript, Vite, MUI, Styled Components.</p>
         </div>
+        <div class="stack-card">
+          <h3>Mobile</h3>
+          <p>React Native, Expo, Flutter, AsyncStorage.</p>
+        </div>
+        <div class="stack-card">
+          <h3>Back-end</h3>
+          <p>Node.js, Express, Prisma, Firebase Admin, REST APIs.</p>
+        </div>
+        <div class="stack-card">
+          <h3>Dados</h3>
+          <p>PostgreSQL, SQLite, Supabase, cache com TTL.</p>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>Desenvolvido com 💻 por Gabriel Andrade</p>
+    <section id="competencias" class="section">
+      <div class="section-title">
+        <h2>Competencias</h2>
+        <p>Principais skills alinhadas ao meu foco mobile e full stack.</p>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skills-card">
+          <h3>Mobile</h3>
+          <div class="skill-list">
+            <span>React Native</span>
+            <span>Expo</span>
+            <span>Flutter</span>
+            <span>TypeScript</span>
+          </div>
         </div>
-    </footer>
+        <div class="skills-card">
+          <h3>Web</h3>
+          <div class="skill-list">
+            <span>React</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+        <div class="skills-card">
+          <h3>Back-end</h3>
+          <div class="skill-list">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>Firebase Auth</span>
+            <span>Prisma</span>
+          </div>
+        </div>
+        <div class="skills-card">
+          <h3>Dados e Dev</h3>
+          <div class="skill-list">
+            <span>PostgreSQL</span>
+            <span>SQLite</span>
+            <span>Supabase</span>
+            <span>Git</span>
+          </div>
+        </div>
+        <div class="skills-card">
+          <h3>Outros</h3>
+          <div class="skill-list">
+            <span>C#</span>
+            <span>.NET</span>
+            <span>ASP.NET</span>
+            <span>n8n</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script type="module" src="script.js"></script>
+    <section id="experiencia" class="section">
+      <div class="section-title">
+        <h2>Experiencia</h2>
+        <p>Resumo das ultimas experiencias profissionais.</p>
+      </div>
+      <div class="experience-grid reveal">
+        <article class="experience-card">
+          <div class="experience-head">
+            <h3>Desenvolvedor</h3>
+            <span>Ludare Consultoria</span>
+          </div>
+          <div class="experience-meta">Abril 2024 - Novembro 2025</div>
+          <p>
+            Foco em front-end e mobile, com manutencao e evolucao de apps,
+            integracoes com APIs e entregas de UX consistente.
+          </p>
+          <div class="experience-tags">
+            <span>React Native</span>
+            <span>Flutter</span>
+            <span>TypeScript</span>
+          </div>
+        </article>
+        <article class="experience-card">
+          <div class="experience-head">
+            <h3>Desenvolvedor</h3>
+            <span>Planetun Tecnologia</span>
+          </div>
+          <div class="experience-meta">Desde Novembro 2025 - Atual</div>
+          <p>
+            Atualmente atuo em projetos com .NET e web, apoiando backend e integracoes de
+            sistemas.
+          </p>
+          <div class="experience-tags">
+            <span>.NET</span>
+            <span>C#</span>
+            <span>ASP.NET</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact">
+      <div class="section-title">
+        <h2>Contato</h2>
+        <p>Aberto a oportunidades e projetos freelance.</p>
+      </div>
+      <div class="contact-card reveal">
+        <div>
+          <h3>Vamos conversar?</h3>
+          <p>
+            Me chame por email ou rede profissional. Respondo rapido.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:gabrielandradecorreabiel@outlook.com">gabrielandradecorreabiel@outlook.com</a>
+          <a class="contact-link" href="https://www.linkedin.com/in/gabriel-andrade-correa/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="contact-link" href="https://github.com/gabriel-Andrade-Correa" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Construido com foco em produto, performance e UX.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
